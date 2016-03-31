@@ -1,3 +1,27 @@
+# Feed Reader Project
+
+### To run
+
+To run this application, open the index.html in your internet browser (i.e. Chrome, Firefox, Internet Explorer).  Upon opening the application, the browser will look similar to the image below.
+
+
+![FeedReader Main Image](markdown_images/feedreader_main_image.jpg)
+
+
+### How to use
+
+The application loads the "Udacity Blog" by default.  To change the source of the feed, click the hamburger icon on the upper left.  A menu will appear showing different source feeds.  Clicking on the a source feed will change the source of the feed and update the browser content.
+
+When you clicked your desired source feed, click an article of your choice.  Clicking on an article will take you to the website containing that article.
+
+### Jasmine Specs
+
+At the bottom of the application, Jasmine specs appear.
+
+![FeedReader Spec Image](markdown_images/feedreader_spec_image.jpg)
+
+The application should have no failures and look like the image above.  If failures appear, the application will not run as expected and problems may occur.
+
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
