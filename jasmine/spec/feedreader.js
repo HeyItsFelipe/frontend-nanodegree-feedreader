@@ -115,9 +115,8 @@ $(function() {
         //element.
         //This is done by checking if .feed has a .entry and checking if
         //the length is greater than 0.
-        it('have single entry element within feed container', function(done) {
+        it('have single entry element within feed container', function() {
             expect($('.feed').has($('.entry')).length).toBeGreaterThan(0);
-            done();
         });
     });
 
@@ -155,10 +154,11 @@ $(function() {
         it('changes html content', function(done) {
             loadFeed(0, function(){
                 newFeedContent = $('.feed').html();
+                expect(newFeedContent).not.toEqual(oldFeedContent);
                 done();
             });
 
-            expect(newFeedContent).not.toEqual(oldFeedContent);
+
         });
     });
 }());
